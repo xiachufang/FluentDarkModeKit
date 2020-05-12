@@ -6,7 +6,7 @@
 import UIKit
 
 public final class DarkModeManager: NSObject {
-  public static func setup() {
+  @objc public static func setup() {
     // Colors
     UIView.swizzleWillMoveToWindowOnce
     UIView.dm_swizzleSetBackgroundColor()
