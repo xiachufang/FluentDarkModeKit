@@ -60,7 +60,7 @@ extension DMTraitEnvironment {
 
       dmTraitCollectionDidChange(nil)
 
-      if #available(iOSApplicationExtension 10.0, *) {
+      if #available(iOS 10.0, *) {
         UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.25, delay: 0, options: [], animations: {
           snapshotViews.forEach { $0.alpha = 0 }
         }) { _ in
